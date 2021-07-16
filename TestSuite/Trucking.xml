@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Regression" parallel="none">
+	<parameter name="browser" value="chrome_remote" />
+	<parameter name="portalURL"	value="https://icargo.ibsplc.aero/aastag/loginFlow " />
+	<parameter name="UserName" value="247319" />
+	<listeners>
+		<listener class-name="com.ibsplc.common.BaseSetup" />
+	</listeners>
+	<test name="Regression" preserve-order="true">
+		<classes>
+			<class name="runner.RunTest_Flow01" />
+			<class name="runner.RunTest_Flow02" />
+			<class name="runner.RunTest_Flow03" />
+			<class name="runner.RunTest_Flow04" />
+			<class name="runner.RunTest_Flow05" />
+			<class name="runner.RunTest_Flow06" />
+			<class name="runner.RunTest_Flow07" />
+			<class name="runner.RunTest_Flow08" />
+			<class name="runner.RunTest_Flow09" />
+		</classes>
+	</test>
+</suite>
